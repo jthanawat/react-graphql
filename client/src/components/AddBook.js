@@ -13,7 +13,6 @@ const AddBook = ({ getAuthorsQuery, addBookMutation }) => {
   const [genre, setGenre] = useState('');
   const [authorId, setAuthorId] = useState('');
 
-  console.log(data);
   const displayAuthors = () => {
     if (data?.loading) {
       return <option disabled>Loading authors</option>;
