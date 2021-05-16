@@ -23,12 +23,7 @@ function BookDetails({ data }) {
       return <div>No book selected...</div>;
     }
   };
-  return (
-    <div id="book-details">
-      <p>Output book details here</p>
-      {displayBookDetails()}
-    </div>
-  );
+  return <div id="book-details">{displayBookDetails()}</div>;
 }
 
 export default graphql(getBookQuery, {
